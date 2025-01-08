@@ -19,14 +19,15 @@ description: >- # this means to ignore newlines until "baseurl:"
   hoihoi
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://hildeverbeek.nl" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: 
-github_username:  
 
 # Build settings
 markdown: kramdown
-theme: minima
+# theme: minima
 plugins:
   - jekyll-feed
+
+sass:
+  style: compact
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

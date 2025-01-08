@@ -3,8 +3,31 @@
   <head>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+        }
+      };
+      </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
   </head>
   <body>
-    {{ content }}
+    <header>
+      <h1>
+        <a href="/">Hilde Verbeek</a>
+      </h1>
+      <nav>
+        {% for item in site.data.navigation -%}
+          <a href="{{ item.link }}" {% if page.sec == item.name or layout.sec == item.name %}class="active"{% endif %}><span>{{ item.name | downcase }}</span></a>
+        {% endfor %}
+      </nav>
+    </header>
+    <div id="content">
+      {{ content }}
+    </div>
   </body>
 </html>

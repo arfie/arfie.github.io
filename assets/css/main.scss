@@ -1,0 +1,226 @@
+---
+---
+
+
+$primary: #397F3E;
+$secondary: #A9DC6A;
+$muted: #DEFCDA;
+$link: #1C6DB0;
+$head: #33085E;
+
+html {
+  // background-color: #ddd;
+  padding: 0;
+  height: 100%;
+
+  body {
+    background-color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 13pt;
+    max-width: 1000px;
+    min-height: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    color: #333;
+    text-align: justify;
+    
+    padding: 0 1em 2em 0;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $head;
+  margin: 1em 0 0.25em;
+  text-align: left;
+  line-height: 1.15;
+}
+
+header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  border-bottom: 4px solid $primary;
+
+  padding: 0.1em 0.25em;
+
+  h1 {
+    margin: 0.75em 0;
+    a {
+      color: $head;
+      text-decoration: none;
+    }
+  }
+
+  nav {
+    text-transform: lowercase;
+    display: flex;
+    flex-flow: row wrap;
+
+    a {
+      display: block;
+      padding: 0 0.25em;
+
+      color: $head;
+      text-decoration: none;
+
+      span {
+        display: block;
+        padding: 0.25em;
+        border-bottom: 2px solid transparent;
+        border-top: 2px solid transparent;
+      }
+
+      &.active span {
+        //text-decoration: wavy underline;
+        border-bottom-color: $primary;
+      }
+      
+      &:hover {
+        background-color: $muted;
+      }
+    }
+  }
+}
+
+#content {
+  padding: 0 .25em;
+
+  margin-top: .5em;
+
+  line-height: 1.75em;
+
+  a {
+    color: $link;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  figure.float {
+    width: 32%;
+
+    padding: 0;
+    margin: 0.2em 0;
+
+    &.right {
+      float: right;
+      margin-left: 1em;
+    }
+
+    &.left {
+      float: left;
+      margin-right: 1em;
+    }
+
+    @media screen and (max-width: 786px) {
+      width: auto;
+      max-width: 90%;
+      float: none !important;
+      display: block;
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
+
+    figcaption {
+      text-align: center;
+      font-style: italic;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  #post-content {
+    line-height: 1.75;
+
+    p {
+      margin-bottom: 2em;
+    }
+  }
+}
+
+details {
+  border: 2pt solid $secondary;
+  padding: 0.5em;
+  margin: 0.5em 0;
+
+  summary {
+    cursor: pointer;
+    font-weight: bold;
+    color: $head;
+
+    &::marker {
+      //display: none;
+      //content: '';
+    }
+  }
+}
+
+dl {
+  display: grid;
+  grid-template-columns: 120px auto;
+
+  dt {
+    font-weight: bold;
+    text-align: right;
+    margin-right: .5em;
+    color: $head;
+  }
+
+  dd {
+    margin-left: 0;
+    border-left: 2pt solid $primary;
+    padding-left: .5em;
+
+    &:not(:last-child) {
+      padding-bottom: 1em;
+    }
+  }
+
+  @media screen and (max-width: 786px) {
+    grid-template-columns: auto;
+
+    dt {
+      text-align: left;
+    }
+
+    dd {
+      padding-bottom: 0 !important;
+      margin-bottom: 1em;
+    }
+  }
+}
+
+
+.publications {
+  list-style: none;
+  padding-left: 0;
+
+  li {
+    display: block;
+    display: flex;
+    flex-flow: column nowrap;
+
+    border: 1pt solid $secondary;
+    margin-bottom: 1em;
+
+    padding: .5em;
+
+    .title {
+      order: 1;
+    }
+    .authors {
+      order: 2;
+    }
+    .venue {
+      order: 3;
+    }
+  }
+}

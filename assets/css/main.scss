@@ -24,7 +24,12 @@ html {
     color: #333;
     text-align: justify;
     
-    padding: 0 1em 2em 0;
+    padding: 0 1em 2em 1em;
+
+    @media screen and (max-width: 786px) {
+      text-align: left;
+      padding: 0 2em 3em 2em;
+    }
   }
 }
 
@@ -155,11 +160,6 @@ details {
     cursor: pointer;
     font-weight: bold;
     color: $head;
-
-    &::marker {
-      //display: none;
-      //content: '';
-    }
   }
 }
 

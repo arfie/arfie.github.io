@@ -2,6 +2,7 @@
 layout: default
 title: Research
 sec: research
+permalink: /research/
 ---
 
 # Research

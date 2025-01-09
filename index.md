@@ -17,4 +17,4 @@ In my personal life I enjoy reading, playing piano, cooking, hiking, running and
 I am a vegan and have an interest in promoting the rights and welfare of animals in general.
 I strive to live in a society in which we no longer exploit nonhuman animals, the planet and one another.
 
-You can read more about [my PhD research here](/research.html). See [here for a list of my publications](/publications.html) and [here for my cv](/cv.html).
+You can read more about [my PhD research here]({% link research.md %}). See [here for a list of my publications]({% link publications.html %}) and [here for my cv]({% link cv.html %}).

@@ -22,13 +22,13 @@ In 2024, I co-authored two papers related to string sampling mechanisms.
 Sampling is an important technique in string algorithm, that reduces the whole string to a small set of representative positions, that for the purpose of an algorithm still conveys the same information as the whole string.
 
 One sampling mechanism is called "minimizers", and involves selecting small fragments of the string that are lexicographically smaller than their surrounding fragments.
-In [*Minimizing the Minimizers through Alphabet Reordering*](https://arxiv.org/abs/2405.04052), we studied the effect of different alphabet orders on the number of minimizers in a string.
+In [*Minimizing the Minimizers through Alphabet Reordering*]({% link _publications/minimizing-minimizers.md %}), we studied the effect of different alphabet orders on the number of minimizers in a string.
 It turns out that the number of minimizers can be significantly smaller under one ordering than another, which can greatly impact the running time of algorithms using minimizers.
 A natural question is thus: can we find the optimal alphabet order, that minimizes the number of minimizers for a given string?
 Our main result is that this problem is NP-hard, which means that it would most likely take an exponential amount of time to find the optimal ordering for any given string.
 However, it remains an open question if this is also true for general (non-lexicographic) orders, or other specific classes.
 
-In [*Sparse Suffix and LCP Array: Simple, Direct, Small and Fast*](https://arxiv.org/abs/2310.09023), we studied the sparse suffix array (SSA), a common string data structure that is often used in tandem with sampling mechanisms.
+In [*Sparse Suffix and LCP Array: Simple, Direct, Small and Fast*]({% link _publications/sparse-suffix-array.md %}), we studied the sparse suffix array (SSA), a common string data structure that is often used in tandem with sampling mechanisms.
 The sparse suffix array takes, for a sample of positions in a string, all suffixes starting at these positions and sorts them lexicographically.
 It is usually combined with the LCP (longest common prefix) array, which tells us the longest prefix that two consecutive entries of the SSA have in common.
 Together, they allow us to quickly find occurrences of patterns starting at any of the sampled positions.
@@ -46,7 +46,7 @@ If the number of short LCP values is large enough, the running time is linear in
     <img src="/assets/images/research/moneylaundering.png" alt="Bank transfers with suspicious accounts represented as a graph" />
 </figure>
 
-In the paper [*Heavy Nodes in a Small Neighborhood*](https://ieeexplore.ieee.org/abstract/document/10792980), we introduced the following graph problem.
+In the paper [*Heavy Nodes in a Small Neighborhood*]({% link _publications/heavy-nodes-small-neighborhood.md %}), we introduced the following graph problem.
 Given a bipartite graph $G$, with node sets $U$ and $V$, and a weight function for the nodes in $V$, we wish to find the subset of $V$ with the largest ratio between its total weight and number of neighbors.
 
 The problem's main motivation is the application of money laundering detection.

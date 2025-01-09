@@ -4,6 +4,11 @@ link: https://arxiv.org/abs/2405.04052
 authors: [hilde, lorraine, greg, solon]
 conf: Symposium on Combinatorial Pattern Matching (CPM)
 date: 2024-05-07
+
+links:
+    - name: CPM 2024 presentation slides
+      path: /assets/slides/minimizing-minimizers-cpm.pdf
+      type: pdf
 ---
 
 Minimizers sampling is one of the most widely-used mechanisms for sampling strings.

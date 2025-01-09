@@ -3,6 +3,11 @@ title: Disjoint Paths and Directed Steiner Tree on Planar Graphs with Terminals 
 link: https://studenttheses.uu.nl/handle/20.500.12932/42333
 conf: Master&rsquo;s thesis
 date: 2022-07-27
+
+links:
+    - name: Thesis presentation slides
+      path: /assets/slides/msc-thesis-slides.pdf
+      type: pdf
 ---
 In the field of parameterized complexity, the main topic of interest is to make normally hard problems more tractable. A problem is in the complexity class FPT (fixed-parameter tractable) if it permits an algorithm with a running time bounded by $f(k) \cdot \text{poly}(n)$, where $n$ is the conventional input size and $k$ is some defined parameter of the input. The consequence of a problem being in FPT, is that it can be solved in polynomial time if the parameter is fixed, despite the problem being NP-hard generally. Many different parameters can be considered for fixed-parameter tractability: usually, this is a natural parameter arising from the problem formulation, such as the weight of a Steiner tree or the size of a dominating set, in their respective problems. Other parameters may be, for example, the output size, structural properties of an input graph (eg. treewidth).
 

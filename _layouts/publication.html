@@ -17,3 +17,14 @@ sec: publications
 <div class="abstract">
     {{ page.content}}
 </div>
+
+{% if page.links -%}
+<h2>Links</h2>
+<ul>
+    {% for item in page.links -%}
+    <li>
+        <a href="{{ item.path }}" target="_blank">{{ item.name }}</a> {% if item.type %}({{ item.type }}){% endif %}
+    </li>
+    {% endfor %}
+</ul>
+{% endif %}

@@ -4,6 +4,11 @@ authors: [esteban, eric, michelle, hilde, pengfei]
 link: http://www.stringology.org/papers/PSC2023.pdf#page=50
 conf: Prague Stringology Conference
 date: 2023-08-01
+
+links:
+    - name: Poster
+      path: /assets/posters/periodicity-degenerate-strings-poster.pdf
+      type: pdf
 ---
 The notion of periods is key in stringology, word combinatorics, and pattern matching algorithms. A string has period $p$ if every two letters at distance $p$ from each other are equal.
 

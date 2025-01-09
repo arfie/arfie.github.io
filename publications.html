@@ -9,14 +9,10 @@ permalink: /publications/
 
 <ul class="publications">
     {% for item in site.publications reversed -%}
-        {% assign auths = "" | split: "," -%}
-        {% for auth in item.authors -%}
-            {% assign auths = auths | push: site.data.authors[auth] -%}
-        {% endfor %}
         <li>
-            <span class="title"><a href="{{ item.link }}" target="_blank">{{ item.title | strip }}</a></span>
+            <span class="title"><a href="{{ item.url }}">{{ item.title | strip }}</a></span>
             {% if item.authors %}
-                <span class="authors">{{ auths | array_to_sentence_string }}.</span>
+                <span class="authors">{% include author_list.html authors=item.authors %}.</span>
             {% endif %}
             <span class="venue">{{ item.conf }}, {{ item.date | date: "%Y" }}.</span>
         </li>

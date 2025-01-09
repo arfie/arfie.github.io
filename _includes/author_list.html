@@ -1,0 +1,5 @@
+{% assign auths = "" | split: "," -%}
+{% for auth in include.authors -%}
+    {% assign auths = auths | push: site.data.authors[auth] -%}
+{% endfor -%}
+{{ auths | array_to_sentence_string }}

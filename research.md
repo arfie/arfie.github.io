@@ -7,6 +7,10 @@ permalink: /research/
 
 # Research
 
+<figure class="float right">
+    <img src="/assets/images/research/dna.jpg" alt="Strands of DNA" />
+</figure>
+
 Fast and memory-efficient algorithms are essential for working with larger and larger amounts of data.
 Theoretical computer scientists concern themselves with designing these algorithms, and proving important properties such as their correctness, their running time and their space usage.
 So far, my research has mostly been on the design of algorithms on graphs and strings.
@@ -21,11 +25,15 @@ Because these DNA sequences can be very long (a human genome is longer than 3 bi
 In 2024, I co-authored two papers related to string sampling mechanisms.
 Sampling is an important technique in string algorithm, that reduces the whole string to a small set of representative positions, that for the purpose of an algorithm still conveys the same information as the whole string.
 
+<figure class="float left">
+    <img src="/assets/images/research/minimizers.png" alt="Construction of the reduction from Feedback Arc Set" />
+</figure>
+
 One sampling mechanism is called "minimizers", and involves selecting small fragments of the string that are lexicographically smaller than their surrounding fragments.
 In [*Minimizing the Minimizers through Alphabet Reordering*]({% link _publications/minimizing-minimizers.md %}), we studied the effect of different alphabet orders on the number of minimizers in a string.
 It turns out that the number of minimizers can be significantly smaller under one ordering than another, which can greatly impact the running time of algorithms using minimizers.
 A natural question is thus: can we find the optimal alphabet order, that minimizes the number of minimizers for a given string?
-Our main result is that this problem is NP-hard, which means that it would most likely take an exponential amount of time to find the optimal ordering for any given string.
+Our main result is that this problem is NP-hard through a reduction from Feedback Arc Set, which means that it would most likely take an exponential amount of time to find the optimal ordering for any given string.
 However, it remains an open question if this is also true for general (non-lexicographic) orders, or other specific classes.
 
 In [*Sparse Suffix and LCP Array: Simple, Direct, Small and Fast*]({% link _publications/sparse-suffix-array.md %}), we studied the sparse suffix array (SSA), a common string data structure that is often used in tandem with sampling mechanisms.
@@ -42,7 +50,7 @@ If the number of short LCP values is large enough, the running time is linear in
 
 ## Heavy nodes in a small neighborhood for money laundering detection
 
-<figure class="float left">
+<figure class="float right">
     <img src="/assets/images/research/moneylaundering.png" alt="Bank transfers with suspicious accounts represented as a graph" />
 </figure>
 

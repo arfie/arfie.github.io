@@ -42,6 +42,10 @@ If the number of short LCP values is large enough, the running time is linear in
 
 ## Heavy nodes in a small neighborhood for money laundering detection
 
+<figure class="float left">
+    <img src="/assets/images/research/moneylaundering.png" alt="Bank transfers with suspicious accounts represented as a graph" />
+</figure>
+
 In the paper [*Heavy Nodes in a Small Neighborhood*](https://ieeexplore.ieee.org/abstract/document/10792980), we introduced the following graph problem.
 Given a bipartite graph $G$, with node sets $U$ and $V$, and a weight function for the nodes in $V$, we wish to find the subset of $V$ with the largest ratio between its total weight and number of neighbors.
 

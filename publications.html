@@ -8,17 +8,17 @@ permalink: /publications/
 <h1>Publications</h1>
 
 <ul class="publications">
-    {% for item in site.data.publications.papers -%}
+    {% for item in site.publications reversed -%}
         {% assign auths = "" | split: "," -%}
         {% for auth in item.authors -%}
-            {% assign auths = auths | push: site.data.publications.authors[auth] -%}
+            {% assign auths = auths | push: site.data.authors[auth] -%}
         {% endfor %}
         <li>
             <span class="title"><a href="{{ item.link }}" target="_blank">{{ item.title | strip }}</a></span>
             {% if item.authors %}
                 <span class="authors">{{ auths | array_to_sentence_string }}.</span>
             {% endif %}
-            <span class="venue">{{ item.conf }}, {{ item.year }}.</span>
+            <span class="venue">{{ item.conf }}, {{ item.date | date: "%Y" }}.</span>
         </li>
     {% endfor %}
 </ul>

@@ -29,6 +29,19 @@ plugins:
 sass:
   style: compact
 
+collections:
+  publications:
+    output: true
+    permalink: /:collection/:name/
+    layout: default
+
+defaults:
+  -
+    scope:
+      path: _publications
+    values:
+      layout: publication
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.

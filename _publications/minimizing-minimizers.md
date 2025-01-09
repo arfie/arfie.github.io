@@ -9,6 +9,9 @@ links:
     - name: CPM 2024 presentation slides
       path: /assets/slides/minimizing-minimizers-cpm.pdf
       type: pdf
+
+citation: >
+  Verbeek, Hilde, et al. "Minimizing the Minimizers via Alphabet Reordering." *35th Annual Symposium on Combinatorial Pattern Matching*. 2024.
 ---
 
 Minimizers sampling is one of the most widely-used mechanisms for sampling strings.

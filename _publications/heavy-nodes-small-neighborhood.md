@@ -4,6 +4,8 @@ link: https://ieeexplore.ieee.org/abstract/document/10792980
 authors: [ling, hilde, huiping, greg, robert, leen, solon]
 conf: IEEE Transactions on Knowledge and Data Engineering
 date: 2024-12-11
+citation: >
+    Li, Ling, et al. "Heavy Nodes in a Small Neighborhood: Exact and Peeling Algorithms with Applications." *IEEE Transactions on Knowledge and Data Engineering* (2024).
 ---
 We introduce a weighted and unconstrained variant of the well-known minimum $k$ union problem: Given a bipartite graph $\mathcal{G}(U,V,E)$ with weights for all nodes in $V$, find a set $S\subseteq V$ such that the ratio between the total weight of the nodes in $S$ and the number of their *distinct* adjacent nodes in $U$ is maximized.
 Our problem, which we term *Heavy Nodes in a Small Neighborhood* (HNSN), finds applications in marketing, team formation, and money laundering detection.

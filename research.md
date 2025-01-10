@@ -8,7 +8,7 @@ permalink: /research/
 # Research
 
 <figure class="float right">
-    <img src="/assets/images/research/dna.jpg" alt="Strands of DNA" />
+    <img src="/assets/images/research/dna.jpg" alt="Strands of DNA (image credit: Unsplash)" title="Image credit: Unsplash" />
 </figure>
 
 Fast and memory-efficient algorithms are essential for working with larger and larger amounts of data.

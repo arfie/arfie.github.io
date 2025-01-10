@@ -230,3 +230,31 @@ hr {
   border-style: solid;
   border-width: 0 0 3px 0;
 }
+
+ol {
+  list-style: none;
+  counter-reset: item;
+  li {
+    counter-increment: item;
+    padding-left: 0.5em;
+    margin-left: -0.5em;
+
+    &::marker {
+      content: counter(item) ".";
+      
+      color: $head;
+      font-weight: bold;
+      text-align: right;
+      display: inline-block;
+    }
+  }
+}
+
+ul li {
+  padding-left: 0.5em;
+  margin-left: -0.5em;
+
+  &::marker {
+    color: $head;
+  }
+}

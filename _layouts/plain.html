@@ -7,16 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style type="text/css">
-        a {
-            color: inherit !important;
-        }
-    
         dd {
             padding-bottom: 0.5em !important;
         }
+
+        h1, h2, h3 {
+          break-after: avoid-page;
+          page-break-after: avoid;
+        }
     
         dl, li {
-            page-break-inside: avoid;
+          break-inside: avoid-page;
         }
     
         h1 {
@@ -26,6 +27,10 @@
         body {
           margin: 0 !important;
           padding: 0 !important;
+        }
+
+        a p {
+          display: inline;
         }
     </style>
 

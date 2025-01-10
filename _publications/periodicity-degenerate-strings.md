@@ -11,7 +11,7 @@ links:
       type: pdf
 
 citation: >
-  Gabory, Estéban, et al. "Periodicity of Degenerate Strings." *Prague Stringology Conference*. 2023.
+  Estéban Gabory, Eric Rivals, Michelle Sweering, Hilde Verbeek and Pengfei Wang. Periodicity of Degenerate Strings. In *Proceedings of the Prague Stringology Conference 2023*, pp. 42-56.
 ---
 The notion of periods is key in stringology, word combinatorics, and pattern matching algorithms. A string has period $p$ if every two letters at distance $p$ from each other are equal.
 

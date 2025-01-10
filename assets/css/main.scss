@@ -250,7 +250,7 @@ ol {
   }
 }
 
-ul li {
+ul:not(.publications) li {
   padding-left: 0.5em;
   margin-left: -0.5em;
 

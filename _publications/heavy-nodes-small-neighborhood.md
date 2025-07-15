@@ -2,7 +2,7 @@
 title: 'Heavy Nodes in a Small Neighborhood: Exact and Peeling  Algorithms with Applications'
 link: https://ieeexplore.ieee.org/abstract/document/10792980
 authors: [ling, hilde, huiping, greg, robert, leen, solon]
-conf: IEEE Transactions on Knowledge and Data Engineering, vol 37, no. 4.
+conf: IEEE Transactions on Knowledge and Data Engineering, vol. 37, no. 4
 date: 2024-12-11
 citation: >
     Ling Li, Hilde Verbeek, Huiping Chen, Grigorios Loukides, Robert Gwadera, Leen Stougie and Solon P. Pissis. Heavy Nodes in a Small Neighborhood: Exact and Peeling Algorithms with Applications. In *IEEE Transactions on Knowledge and Data Engineering*, vol. 37, no. 4, pp. 1853-1870. https://doi.org/10.1109/TKDE.2024.3515875.

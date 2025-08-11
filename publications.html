@@ -5,16 +5,25 @@ sec: publications
 permalink: /publications/
 ---
 
+{% assign pubsByYear = site.publications | group_by_exp: "item", "item.date | date: '%Y'" %}
+
 <h1>Publications</h1>
 
 <ul class="publications">
-    {% for item in site.publications reversed -%}
+    {% for year in pubsByYear reversed -%}
+    <li>
+        {{ year.name }}
+    </li>
+    <ul>
+        {% for item in year.items reversed %}
         <li>
             <span class="title"><a href="{{ item.url }}">{{ item.title | strip }}</a></span>
             {% if item.authors %}
                 <span class="authors">{% include author_list.html authors=item.authors %}.</span>
             {% endif %}
-            <span class="venue">{{ item.conf }}, {{ item.date | date: "%Y" }}.</span>
+            <span class="venue">{{ item.conf }}.</span>
         </li>
+        {% endfor %}
+    </ul>
     {% endfor %}
 </ul>

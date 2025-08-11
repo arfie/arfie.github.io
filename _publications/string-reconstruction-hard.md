@@ -2,7 +2,7 @@
 title: 'When is String Reconstruction using de Bruijn Graphs Hard?'
 authors: [ben, sebastiaan, solon, leen, hilde]
 link: https://arxiv.org/abs/2508.03433
-conf: European Symposium on Algorithms (ESA)
+conf: European Symposium on Algorithms (ESA) 2025
 date: 2025-08-05
 
 citation: >

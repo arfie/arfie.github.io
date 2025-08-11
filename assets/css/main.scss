@@ -203,24 +203,50 @@ dl {
   list-style: none;
   padding-left: 0;
 
-  li {
-    display: block;
-    display: flex;
-    flex-flow: column nowrap;
+  >li {
+    color: $head;
+    font-size: 1.25em;
+    
+    &::before {
+      background-color: $primary;
+      border-radius: 100%;
 
-    border: 1pt solid $secondary;
-    margin-bottom: 1em;
+      display: inline-block;
+      width: 0.75em;
+      height: 0.75em;
+      vertical-align: middle;
 
-    padding: .5em;
-
-    .title {
-      order: 1;
+      content: '';
     }
-    .authors {
-      order: 2;
-    }
-    .venue {
-      order: 3;
+  }
+
+  > ul {
+    margin-top: -4pt;
+    padding-top: 4pt;
+    border-left: 2.5pt solid $primary;
+    padding-left: 0.5em;
+    margin-left: calc(0.5em - 1.5pt);
+    margin-bottom: 0.5em;
+
+    li {
+      display: block;
+      display: flex;
+      flex-flow: column nowrap;
+
+      //border: 1pt solid $secondary;
+      margin-bottom: .25em;
+
+      padding: .25em;
+
+      .title {
+        order: 1;
+      }
+      .authors {
+        order: 2;
+      }
+      .venue {
+        order: 3;
+      }
     }
   }
 }

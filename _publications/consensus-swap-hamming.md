@@ -2,7 +2,7 @@
 title: 'String Consensus Problems with Swaps and Substitutions'
 authors: [esteban, laurent, gabriele, hilde]
 link: https://arxiv.org/abs/2507.19139
-conf: International Symposium on String Processing and Information Retrieval (SPIRE)
+conf: International Symposium on String Processing and Information Retrieval (SPIRE) 2025
 date: 2025-07-28
 
 citation: >

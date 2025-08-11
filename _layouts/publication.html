@@ -6,7 +6,7 @@ sec: publications
 <h1>{{ page.title }}</h1>
 <div class="subtitle">
     {% if page.authors %}{% include author_list.html authors=page.authors %}.<br>{% endif %}
-    {{ page.conf }}, updated {{ page.date | date: "%e %B %Y"}}.
+    {{ page.conf }}.
 </div>
 
 <p>
@@ -28,3 +28,5 @@ sec: publications
     {% endfor %}
 </ul>
 {% endif %}
+
+<em>Updated {{ page.date | date: "%e %B %Y"}}.</em>

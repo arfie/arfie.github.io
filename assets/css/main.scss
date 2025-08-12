@@ -8,6 +8,10 @@ $muted: #DEFCDA;
 $link: #1C6DB0;
 $head: #33085E;
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   // background-color: #ddd;
   padding: 0;
@@ -170,7 +174,6 @@ details {
   dt {
     text-align: left;
     font-size: 1.25em;
-    font-weight: normal;
     margin-right: auto;
     
     &::before {
@@ -182,7 +185,7 @@ details {
       height: 0.75em;
       vertical-align: middle;
 
-      margin-left: -.25em;
+      margin-left: calc(-.375em + 1.25pt);
       margin-right: .25em;
 
       content: '';
@@ -205,7 +208,6 @@ dl {
   grid-template-columns: 120px auto;
 
   dt {
-    font-weight: bold;
     text-align: right;
     margin-right: .5em;
     color: $head;

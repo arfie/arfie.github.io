@@ -9,21 +9,19 @@ permalink: /publications/
 
 <h1>Publications</h1>
 
-<ul class="publications">
+<dl class="publications">
     {% for year in pubsByYear reversed -%}
-    <li>
-        {{ year.name }}
-    </li>
-    <ul>
+    <dt>{{ year.name }}</dt>
+    <dd>
         {% for item in year.items reversed %}
-        <li>
+        <div class="publication">
             <span class="title"><a href="{{ item.url }}">{{ item.title | strip }}</a></span>
             {% if item.authors %}
                 <span class="authors">{% include author_list.html authors=item.authors %}.</span>
             {% endif %}
             <span class="venue">{{ item.conf }}.</span>
-        </li>
+        </div>
         {% endfor %}
-    </ul>
+    </dd>
     {% endfor %}
-</ul>
+</dl>

@@ -163,6 +163,43 @@ details {
   }
 }
 
+@mixin mobile-dl {
+  grid-template-columns: auto;
+  margin-left: .5em;
+
+  dt {
+    text-align: left;
+    font-size: 1.25em;
+    font-weight: normal;
+    margin-right: auto;
+    
+    &::before {
+      background-color: $primary;
+      border-radius: 100%;
+
+      display: inline-block;
+      width: 0.75em;
+      height: 0.75em;
+      vertical-align: middle;
+
+      margin-left: -.25em;
+      margin-right: .25em;
+
+      content: '';
+    }
+  }
+
+  dd {
+    padding-bottom: 0 !important;
+    margin-bottom: 1em;
+
+    border-left-width: 2.5pt;
+
+    margin-top: -.3em;
+    padding-top: .55em;
+  }
+}
+
 dl {
   display: grid;
   grid-template-columns: 120px auto;
@@ -185,69 +222,30 @@ dl {
   }
 
   @media screen and (max-width: 786px) {
-    grid-template-columns: auto;
+    @include mobile-dl;
+  }
 
-    dt {
-      text-align: left;
-    }
-
-    dd {
-      padding-bottom: 0 !important;
-      margin-bottom: 1em;
-    }
+  &.publications {
+    @include mobile-dl;
   }
 }
 
+.publication {
+  display: flex;
+  flex-flow: column nowrap;
 
-.publications {
-  list-style: none;
-  padding-left: 0;
-
-  >li {
-    color: $head;
-    font-size: 1.25em;
-    
-    &::before {
-      background-color: $primary;
-      border-radius: 100%;
-
-      display: inline-block;
-      width: 0.75em;
-      height: 0.75em;
-      vertical-align: middle;
-
-      content: '';
-    }
+  &:not(:last-child){
+    margin-bottom: .75em;
   }
 
-  > ul {
-    margin-top: -4pt;
-    padding-top: 4pt;
-    border-left: 2.5pt solid $primary;
-    padding-left: 0.5em;
-    margin-left: calc(0.5em - 1.5pt);
-    margin-bottom: 0.5em;
-
-    li {
-      display: block;
-      display: flex;
-      flex-flow: column nowrap;
-
-      //border: 1pt solid $secondary;
-      margin-bottom: .25em;
-
-      padding: .25em;
-
-      .title {
-        order: 1;
-      }
-      .authors {
-        order: 2;
-      }
-      .venue {
-        order: 3;
-      }
-    }
+  .title {
+    order: 1;
+  }
+  .authors {
+    order: 2;
+  }
+  .venue {
+    order: 3;
   }
 }
 

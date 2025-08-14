@@ -8,6 +8,12 @@ $muted: #DEFCDA;
 $link: #1C6DB0;
 $head: #33085E;
 
+@mixin mobile {
+  @media screen and (max-width: 786px) {
+    @content;
+  }
+}
+
 * {
   box-sizing: border-box;
 }
@@ -30,7 +36,7 @@ html {
     
     padding: 0 1em 2em 1em;
 
-    @media screen and (max-width: 786px) {
+    @include mobile {
       text-align: left;
       padding: 0 2em 3em 2em;
     }
@@ -52,10 +58,15 @@ header {
 
   border-bottom: 4px solid $primary;
 
-  padding: 0.1em 0.25em;
+  padding: 1.6em 0 1.6em 0.25em;
+
+  @include mobile {
+    padding-bottom: 1.35em;
+  }
 
   h1 {
-    margin: 0.75em 0;
+    margin: 0;
+
     a {
       color: $head;
       text-decoration: none;
@@ -89,6 +100,57 @@ header {
       &:hover {
         background-color: $muted;
       }
+    }
+
+    @include mobile {
+      flex-flow: column nowrap;
+
+      background-color: white;
+      text-align: right;
+
+      margin-left: auto;
+      margin-bottom: -1em;
+
+      display: none;
+
+      &.open {
+        display: flex;
+      }
+
+      a {
+        span {
+          border-right: 2px solid transparent;
+        }
+          
+        &.active span {
+          border-bottom-width: 0;
+          border-top-width: 0;
+          border-right-color: $primary;
+        }
+      }
+    }
+  }
+  
+  #mobile-menu-button {
+    display: none;
+  }
+
+  @include mobile {
+    #mobile-menu-button {
+      display: block;
+      float: right;
+      font-size: 1.3em;
+
+      text-align: center;
+      line-height: 2em;
+
+      margin-top: 0.25em;
+
+      width: 2em;
+      height: 2em;
+
+      cursor: pointer;
+      user-select: none;
     }
   }
 }
@@ -125,7 +187,7 @@ header {
       margin-right: 1em;
     }
 
-    @media screen and (max-width: 786px) {
+    @include mobile {
       width: auto;
       max-width: 90%;
       float: none !important;
@@ -223,7 +285,7 @@ dl {
     }
   }
 
-  @media screen and (max-width: 786px) {
+  @include mobile {
     @include mobile-dl;
   }
 

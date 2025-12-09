@@ -8,7 +8,7 @@ sec: home
     <img src="assets/images/portrait.jpg" alt="Portrait picture taken at CWI" />
 </figure>
 
-I am a third-year theoretical computer science PhD student supervised by Solon Pissis and Leen Stougie at CWI in Amsterdam.
+I am a fourth-year theoretical computer science PhD student supervised by Solon Pissis and Leen Stougie at CWI in Amsterdam.
 My research is on algorithm design with a specific focus on string algorithms.
 String algorithms, although a smaller sub-area of the broader theoretical computer science community, are ubiquitous in their applications to bioinformatics and information retrieval, among other fields.
 My PhD is funded by CWI's Constance van Eeden PhD fellowship, which is intended to stimulate the representation of women in mathematics and computer science.

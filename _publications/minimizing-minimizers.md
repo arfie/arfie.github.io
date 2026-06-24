@@ -1,9 +1,9 @@
 ---
 title: Minimizing the Minimizers via Alphabet Reordering
-link: https://arxiv.org/abs/2405.04052
+link: https://www.sciencedirect.com/science/article/abs/pii/S030439752600191X
 authors: [hilde, lorraine, greg, solon]
-conf: Symposium on Combinatorial Pattern Matching (CPM) 2024
-date: 2024-05-07
+conf: Theoretical Computer Science, 115932
+date: 2026-06-24
 
 links:
     - name: CPM 2024 presentation slides
@@ -11,7 +11,8 @@ links:
       type: pdf
 
 citation: >
-  Hilde Verbeek, Lorraine A.K. Ayad, Grigorios Loukides, and Solon P. Pissis. Minimizing the Minimizers via Alphabet Reordering. In *35th Annual Symposium on Combinatorial Pattern Matching (CPM 2024)*. Leibniz International Proceedings in Informatics (LIPIcs), Volume 296, pp. 28:1-28:13, Schloss Dagstuhl – Leibniz-Zentrum für Informatik (2024). https://doi.org/10.4230/LIPIcs.CPM.2024.28.
+  Hilde Verbeek, Lorraine A.K. Ayad, Grigorios Loukides, and Solon P. Pissis. Minimizing the minimizers via alphabet reordering. Theoretical Computer Science, Volume 1076, 2026, 115932, https://doi.org/10.1016/j.tcs.2026.115932.
+
 ---
 
 Minimizers sampling is one of the most widely-used mechanisms for sampling strings.

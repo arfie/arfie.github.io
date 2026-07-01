@@ -9,9 +9,11 @@ sec: publications
     {{ page.conf }}.
 </div>
 
+{% if page.link %}
 <p>
     Most recent version: <a href="{{ page.link }}" target="_blank">{{ page.link }}</a>.
 </p>
+{% endif %}
 
 <h2>Abstract</h2>
 <div class="abstract">

@@ -4,7 +4,7 @@ title: Hilde Verbeek
 sec: home
 ---
 
-**I'm looking for a postdoc position in algorithms starting in early 2027! My main interests are in string algorithms, parameterized algorithms and graph theory. Please [contact me](https://www.cwi.nl/en/people/hilde-verbeek/) if you have a position available or are otherwise interested in talking.**
+**I'm on the market for a postdoc position in algorithms starting in early 2027! My main interests are in string algorithms, parameterized algorithms and graph theory. Please [contact me](https://www.cwi.nl/en/people/hilde-verbeek/) if you have a position available or are otherwise interested in talking.**
 
 <figure class="float right">
     <img src="assets/images/portrait.jpg" alt="Portrait picture taken at CWI" />

@@ -1,9 +1,9 @@
 ---
 title: 'When is String Reconstruction using de Bruijn Graphs Hard?'
 authors: [ben, sebastiaan, solon, leen, hilde]
-link: https://arxiv.org/abs/2508.03433
-conf: European Symposium on Algorithms (ESA) 2025
-date: 2025-08-05
+link: https://dl.acm.org/doi/abs/10.1145/3841640
+conf: Transactions on Algorithms, 2026
+date: 2026-08-13
 
 citation: >
   Ben Bals, Sebastiaan van Krieken, Solon Pissis, Leen Stougie, and Hilde Verbeek. 2025. When is String Reconstruction using de Bruijn Graphs Hard? In *European Symposium on Algorithms (ESA)*, 2025.

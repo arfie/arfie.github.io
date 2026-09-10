@@ -3,6 +3,7 @@ title: 'Text Indexing: From Reporting to Counting'
 authors: [ben, panos, oded, solon, hilde]
 conf: European Symposium on Algorithms (ESA) 2026
 date: 2026-7-1
+link: https://arxiv.org/abs/2607.24043
 
 citation: >
   tba
